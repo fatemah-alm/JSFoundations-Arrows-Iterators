@@ -54,10 +54,10 @@ const hottestDays = function (temperatures, threshhold) {
  *       all previous functions
  *******************************************/
 const logHottestDays = function (temperatures, threshhold) {
+    // temperatures.filter(element => element>threshhold)
+    temperatures.forEach(element => element>threshhold ? console.log(element-32)*(5/9) : false)
 
-    temperatures.filter(element => element>threshhold) 
-    temperatures.forEach(element => console.log(element-32)*(5/9))
-
+    
 };
 
 /* Uncomment the following lines to test your code... */
